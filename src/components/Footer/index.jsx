@@ -4,8 +4,11 @@ import Styles from './styles.module.scss';
 function Footer() {
   return (
     <footer className={Styles.footer}>
-      &copy; {new Date().getFullYear()} Fish White
-      <small className={Styles.byline}>🚀 Built by Astro</small>
+      &copy; {new Date().getFullYear()} Kez &amp; Unicorns{' '}
+      <span role="image" aria-label="unicorn">
+        🦄
+      </span>
+      <small className={Styles.byline}>🚀 Built with Astro</small>
     </footer>
   );
 }
