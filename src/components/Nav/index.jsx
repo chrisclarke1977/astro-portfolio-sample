@@ -8,6 +8,9 @@ function Nav() {
         <div className={Styles.link}>Kez &amp; Unicorns</div>
       </a>
       <a className={Styles.link} href="/projects">
+        Projects
+      </a>
+      <a className={Styles.link} href="/videos">
         Videos
       </a>
       <a className={Styles.link} href="/about">
