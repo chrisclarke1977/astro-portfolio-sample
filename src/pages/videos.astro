@@ -12,15 +12,39 @@ import Videos from '../components/Videos/index.jsx';
 			title="All Projects | Kez &amp; Unicorns"
 			description="Learn about Kez &amp; Unicorns most recent projects"
 		/>
+		<style lang="scss">
+			.heroImg {
+				max-height: 24rem;
+				object-fit: cover;
+				overflow: hidden;
 
+				img {
+					width: 100%;
+				}
+			}
+
+			.bio {
+				font-size: var(--f-u1);
+				line-height: 2;
+			}
+		</style>
 	</head>
 	<body>
 		<Nav />
-    <main className="site-main">
-      <div className="container">
-        <Videos />
-      </div>
-    </main>
+        <main className="site-main">
+            <div className="container">
+            <div class="wrapper">
+                <div class="heroImg mt4 mb4">
+                    <img
+                        width="1400"
+                        height="350"
+                        src="https://kezandunicorns.com/assets/top-banner.jpg"
+                    />
+                </div>
+                <Videos />
+            </div>
+            </div>
+        </main>
 		<Footer />
             <script>
             (function(selector, src, preferNativeLazyLoad) {
