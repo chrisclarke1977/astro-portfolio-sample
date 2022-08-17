@@ -15,6 +15,7 @@ const { content } = Astro.props;
 				padding: 8rem;
 				display: flex;
 				background-color: var(--t-fg);
+				background-position: 50% 30%;
 				background-repeat: no-repeat;
 				background-size: cover;
 				min-height: 25vw;
@@ -69,6 +70,15 @@ const { content } = Astro.props;
 	</head>
 	<body>
 		<Nav />
+		<div className="wrapper">
+										<div class="heroImg mt4 mb4">
+								<img
+										width="1400"
+										height="350"
+										src="https://kezandunicorns.com/assets/top-banner.jpg"
+								/>
+							</div>
+							</div>
 		<header style={`background-image:url(${content.img})`} class="hero">
 			<h1 class="title">{content.title}</h1>
 		</header>
